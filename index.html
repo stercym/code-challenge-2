@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Enter Guest Information</h1>
+    <h1>Guest Information</h1>
     <!-- Creating a form to collect the guest information -->
     <form id="guestForm">
         <div>
@@ -21,7 +21,7 @@
         </div>
         
         <div>
-        <label for="email"><strong>Guest email</strong></label> 
+        <label for="email"><strong>Guest Email</strong></label> 
         <input type="email" id="email" name="email"> 
         </div>
         
@@ -34,7 +34,7 @@
         <div>
         <label for="category">Guest Category</label> 
         <select id = "category" name = "category">
-            <option value="" disabled selected>Select guest category</option>
+            <option value="" disabled selected>--Select guest category--</option>
             <option value="Friend">Friend</option>
             <option value="Family">Family</option>
             <option value="Colleague">Colleague</option>
@@ -47,7 +47,7 @@
     <div>
         <!-- The ordered list is meant to store the guest lists as they are being created -->
         <h3>Guests List</h3>
-        <ol id = "GuestsList">
+        <ol id = "guestsList">
         </ol>
     </div>
     <script src = "src/index.js">

@@ -1,6 +1,4 @@
-
-myButton = document.getElementById("submitButton");
-myButton.addEventListener("click", formSubmitHandler);
+let myButton = document.getElementById("submitButton");
 let firstNameInput = document.getElementById('fname');
 let lastNameInput = document.getElementById('lname');
 let guestEmail = document.getElementById('email');
@@ -8,13 +6,10 @@ let rsvpCheckbox = document.getElementById('rsvp');
 let guestCategory = document.getElementById('category');
 
 // add event listeners
+myButton.addEventListener("click", formSubmitHandler);
 firstNameInput.addEventListener("input", firstNameHandler);
 lastNameInput.addEventListener("input", lastNameHandler);
 email.addEventListener("change", emailHandler);
-
-function buttonClickFn() {
-    alert("Button has been clicked");
-}
 
 function firstNameHandler(e) {
     guestFirstName = e.target.value;
@@ -37,7 +32,7 @@ function emailHandler(e) {
 
 function formSubmitHandler(e) {
     e.preventDefault();
-    guestList = document.getElementById("GuestsList");
+    guestList = document.getElementById("guestsList");
     let numberOfGuests = 0;
 
     let guestRSVP = "Not Attending";
@@ -87,13 +82,14 @@ function formSubmitHandler(e) {
 function deleteButtonHandler(e) {
     e.preventDefault();
 
-    //e.target.parentNode is the <li> item to be deleted from the <ol> (e.target.parentNode.parentNode)
-    let choice = confirm('Are you sure you want to delete?');
+    //e.target.parentNode is the <li> item to be removed from the <ol> (e.target.parentNode.parentNode)
+    let choice = confirm('Are you sure you want to remove the guest?');
     if (choice) {
         e.target.parentNode.parentNode.removeChild(e.target.parentNode);
     }
 
 }
+
 //function called to clear fields ready to create a new gust 
 function clearFields() {
     firstNameInput.value = "";

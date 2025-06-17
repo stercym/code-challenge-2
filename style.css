@@ -68,7 +68,7 @@ div > h3 {
     padding-bottom: 1%;
 }
 
-#GuestsList {
+#guestsList {
     max-width: 40%;
     margin: 1rem auto;
     padding: 1rem;
@@ -77,7 +77,7 @@ div > h3 {
     list-style-type: decimal;
 }
 
-#GuestsList li {
+#guestsList li {
     padding: 0.8rem;
     margin-bottom: 0.6rem;
     border-radius: 6px;
@@ -88,11 +88,11 @@ div > h3 {
     transition: transform 0.2s ease;
 }
 
-#GuestsList li:hover {
+#guestsList li:hover {
     transform: scale(1.01);
 }
 
-#GuestsList button {
+#guestsList button {
     background-color: #e74c3c;
     border: none;
     padding: 0.4rem 0.8rem;
@@ -102,7 +102,7 @@ div > h3 {
     font-size: 0.9rem;
 }
 
-#GuestsList button:hover {
+#guestsList button:hover {
     background-color: #f7f4f4;
 }
 
